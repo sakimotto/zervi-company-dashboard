@@ -7,7 +7,7 @@ import path from 'path'
 export default defineConfig({
   plugins: [react(),tailwindcss()],
   optimizeDeps: {
-    include: ['@fullcalendar/core']
+    exclude: ['@fullcalendar/core']
   },
   resolve: {
     alias: {
